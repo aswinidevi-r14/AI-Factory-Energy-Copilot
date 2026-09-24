@@ -26,11 +26,11 @@ import {
 } from "recharts";
 
 import "./App.css";
-
+const API_URL = "https://ai-factory-energy-copilot.onrender.com";
 // Works locally and also supports deployment.
 // For deployment, set VITE_API_URL to your deployed backend URL.
 const API_BASE =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  import.meta.env.VITE_API_URL || "https://ai-factory-energy-copilot.onrender.com";
 
 function StatCard({ icon: Icon, title, value, subtitle }) {
   return (
